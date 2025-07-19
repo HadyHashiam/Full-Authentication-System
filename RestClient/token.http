@@ -1,0 +1,9 @@
+### GetAll 
+POST http://localhost:3000/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "c59aa97fefd1f9aeb0524c08dc613f93cd83c6a26eb94f93d7600d52f601aac7b3dbe79790d814c5"
+
+  }
+

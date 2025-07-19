@@ -1,0 +1,77 @@
+
+### Register
+POST  http://localhost:3000/signup
+Content-Type: application/json
+
+{
+  "name":"hady",
+  "email": "hadyhashim117@gmail.com",
+  "password": "123456789"
+ 
+}
+
+
+### login
+POST  http://localhost:3000/login
+Content-Type: application/json
+Authorization:  Bearer 
+
+{
+  "email": "hadyhashim17@gmail.com",
+  "password": "123456789"
+}
+
+
+
+### forget password
+POST  http://localhost:3000/auth/reset-password
+Content-Type: application/json
+
+{
+  "email": "hadyhashim17@gmail.com"
+}
+
+
+
+###verfication code 
+POST  http://localhost:3000/auth/verify-code
+Content-Type: application/json
+
+{
+  "code": "232418"
+}
+
+
+###reset password
+POST  http://localhost:3000/auth/change-password
+Content-Type: application/json
+
+{
+  "email": "hadyhashim17@gmail.com",
+  "password": "123456789"
+}
+
+
+
+
+### test cookie
+GET   http://localhost:3000/test-cookie
+Content-Type: application/json
+
+
+
+###check 
+GET  http://localhost:3000/check
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdhNTIzNGEwYWU5YmIyYTI0NjRhMTMiLCJpYXQiOjE3NTI4NTc5MTQsImV4cCI6MTc1Mjg1Nzk3NH0.p6jjZXRWj9Cr7PwBUiOitH4AoKQ9EpTBi9bm4UTRWe8
+###Logout 
+
+
+
+
+
+### logout
+POST  http://localhost:3000/logout
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODdhZWUwZjcwNzgxNzA0MjBkMjNiODgiLCJpYXQiOjE3NTI4ODY4OTMsImV4cCI6MTc1Mjg4Nzc5M30.RWZzPbu3O7SpK-AULBDnmzPaXxtNBJCBmaWze1zCwpU
+
