@@ -312,7 +312,7 @@ exports.setupOtp = asyncHandler(async (req, res, next) => {
   user.otpSecret = secret;
   await user.save();
 
-  const service = 'E-shop App';
+  const service = 'Name_Of_Your_Service'; // Replace with your service name
   const otpauth = authenticator.keyuri(user.email, service, secret);
   const qrCodeUrl = await qrcode.toDataURL(otpauth);
 
